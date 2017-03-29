@@ -1,0 +1,27 @@
+@import "../../scss/vars.scss";
+.navbar {
+  background-color: $brand-primary / 2;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    color: white;
+  }
+
+  div {
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  div img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
