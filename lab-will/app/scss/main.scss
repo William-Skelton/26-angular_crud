@@ -1,3 +1,18 @@
+@import "reset.scss";
+@import "base.scss";
+
+@import "../component/gallery/create-gallery/create-gallery.scss";
+
+
 body {
-  background: grey;
+  background: $brand-secondary;
+}
+
+a{
+  text-decoration: none;
+}
+
+.input-std {
+  border-radius: 7px;
+  text-align: center;
 }

@@ -3,18 +3,22 @@
     class="gallery-form"
     ng-submit="createGalleryCtrl.createGallery()">
 
-    <fieldset>
-      <label for="name">name</label>
-      <input name="name" class="input-std" type="text"
+    <h2>Create a new gallary.</h2>
+    <fieldset class="gallery-fieldset">
+      <!-- <label for="name">name</label> -->
+      <input name="name" class="input-std" placeholder="Gallary Name" type="text"
         ng-model="createGalleryCtrl.gallery.name" required>
     </fieldset>
 
-    <fieldset>
-      <label for="desc">description</label>
-      <input name="desc" class="input-std" type="text"
+    <fieldset class="gallery-fieldset">
+      <!-- <label for="desc">description</label> -->
+      <input name="desc" class="input-std" placeholder="Gallery Description" type="text"
         ng-model="createGalleryCtrl.gallery.desc" required>
     </fieldset>
 
-    <button class="btn-std" type="submit">create gallery</button>
+    <div>
+      <button class="btn-std" type="submit">create gallery</button>
+    </div>
+    
   </form>
 </section>
