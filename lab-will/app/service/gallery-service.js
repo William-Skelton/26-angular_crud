@@ -50,6 +50,17 @@ function galleryService($q, $log, $http, authService) {
       };
 
       // TODO: create $http.delete request
+      return $http.delete(url, gallery, config);
+    })
+    .then( res => (
+      $log.log('gallery.deleted');
+      let gallery = res.data;
+      service.galleries.pop(gallery);
+      return gallery;
+    ))
+    .catch( err => {
+      $log.log(err.message);
+      return $q.reject(err);
     });
   };
 
