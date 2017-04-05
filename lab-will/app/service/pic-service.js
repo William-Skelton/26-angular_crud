@@ -18,7 +18,7 @@ function picService($q, $log, $http, Upload, authService) {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json'
       };
-
+      console.log(picData);
       return Upload.upload({
         url,
         headers,
