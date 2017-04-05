@@ -32,6 +32,6 @@ function ThumbnailController($log, picService, authService, $http, $q) {
     })
     .then( () => {
       this.gallery.pics.splice(this.gallery.pics.indexOf(this.pic), 1)
-    })
+    });
   };
 };
